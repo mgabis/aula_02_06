@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+            
+            data_n = prompt ('Informe sua data de nascimento','dd/mm/aaaa');
+            document.write(data_n+'<br>');
+            data_n = data_n.split('/');
+            document.write('Dia '+ data_n[0] + '<br>');
+            document.write('Mês '+ data_n[1] + '<br>');
+            document.write('Ano '+ data_n[2] + '<br>');
+            
+            document.write(data_n.join(',')) ;
+            
+            
+            
+        </script>
+    </body>
+</html>
