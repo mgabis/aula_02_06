@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+      var nome=new Array();
+      var nota1=new Array();
+      var nota2=new Array();
+      var media=new Array();
+      
+      var i=1;
+      
+      do{
+          nome[i] = prompt ('nome','');
+          nota1[i] = parseFloat ((prompt('Nota 1','')).replace(',','.'));
+          nota2[i] = parseFloat ((prompt('Nota 2','')).replace(',','.'));
+          media[i] = (nota1[i] + nota2[i])/2;
+          
+          i++
+      }while (confirm('confirmar?'));
+      
+      for (a in nome) {
+          document.write('<h3>Nome: ' + nome[a] + '</h3>');
+          document.write('Nota 1: ' + nota1[a] + '<br/>');
+          document.write('Nota 2: ' + nota2[a] + '<br/>');
+          document.write('Media: ' + media[a] + '<br/><br/>');
+          
+      }
+      
+          </script>
+    </body>
+</html>
